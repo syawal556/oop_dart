@@ -14,25 +14,15 @@ import 'package:oop_dart/class.dart'; // import library Class.dart
 // }
 void main() {
 //inisiasi/instace object adalah proses pembuatan object dari sebuah class
-  var programmer = new ManusiaMilenial('syawaludin');
+  var Programmer = new programmer('Syawaludin');
   programmer.email = 'syawaludin556@gmai.com';
   programmer.info();
   programmer.makan();
-  print(programmer.nama);
-  print(programmer.email);
-  print(programmer._password); //akses atribut password
 
   print('\n'); //pindah baris
 
-  var dosen = new ManusiaMilenial('intan');
+  var dosen = new Dosen('intan');
   dosen.email = 'intan@bsi.ac.id';
   dosen.info();
   dosen.makan();
-
-  print('\n'); //pindah baris
-
-  var hacker = new ManusiaMilenial('Dio');
-  hacker.email = 'dio@bsi.ac.id';
-  hacker.info();
-  hacker.makan();
 }

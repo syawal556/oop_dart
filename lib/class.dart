@@ -14,6 +14,8 @@
 //   }
 // }
 
+import 'dart:ffi';
+
 abstract class society {
   void makan();
 }
@@ -32,12 +34,31 @@ class Manusia extends society {
 
 //awal inheritance
 class ManusiaMilenial extends Manusia {
-  String email = '';
-  String _password = '';
+  String email =";
+  String _password = ";ManusiaMilenial(String email):super(email);
 
   ManusiaMilenial(String email) : super(email);
   void info() {
-    print('nama : $nama, email:$email ');
+    print('namaku : $nama, email:$email ');
   }
   //akhir inhertance
+}
+class programmer extends
+ManusiaMilenial{
+  programmer(String email):super(email);
+  @override
+
+  void info() {
+    print('email: $email Pemilikny adalah $nama');
+
+  }
+}
+
+class Dosen extends ManusiaMilenial{
+  Dosen(String nama) : super(nama);
+
+  @override
+  void info(){
+    print('$nama, Telah Memikiki Email= $email');
+  }
 }
